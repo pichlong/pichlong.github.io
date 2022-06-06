@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Bely Display';
+    src: url('BelyDisplay.eot');
+    src: url('BelyDisplay.eot?#iefix') format('embedded-opentype'),
+        url('BelyDisplay.woff2') format('woff2'),
+        url('BelyDisplay.woff') format('woff'),
+        url('BelyDisplay.ttf') format('truetype'),
+        url('BelyDisplay.svg#BelyDisplay') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
