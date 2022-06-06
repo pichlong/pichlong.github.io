@@ -1,3 +1,4 @@
+*,
 ::before,
 ::after {
 	box-sizing: border-box;
@@ -726,6 +727,113 @@ footer .column.contact {
 	.subhero .featured .meta h3 {
 		margin-bottom: auto;
 	}
+}
+
+.collection {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	--bg-opacity: 1;
+	background-color: rgb(255 255 255 / var(--bg-opacity));
+	padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+	.collection {
+		padding: 3rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.collection {
+		padding: 2.5rem;
+	}
+}
+
+.collection h2 {
+	width: 100%;
+	text-align: center;
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+.collection .group {
+	display: flex;
+	max-width: 72rem;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 1.5rem;
+	--bg-opacity: 1;
+	background-color: rgb(255 255 255 / var(--bg-opacity));
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+	.collection .group {
+		gap: 2rem;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.collection .group {
+		gap: 2.5rem;
+		padding-top: 2.5rem;
+		padding-bottom: 2.5rem;
+	}
+}
+
+.collection .book {
+	display: flex;
+	width: 41.666667%;
+	flex-direction: column;
+	row-gap: 0.25rem;
+}
+
+@media (min-width: 640px) {
+	.collection .book {
+		width: 25%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.collection .book {
+		row-gap: 0.5rem;
+	}
+}
+
+@media (min-width: 1280px) {
+	.collection .book {
+		width: 16.666667%;
+	}
+}
+
+.collection .book img {
+	height: auto;
+	width: 100%;
+	-o-object-fit: contain;
+	object-fit: contain;
+	-o-object-position: center;
+	object-position: center;
+}
+
+.collection .book h3 {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	font-weight: 600;
+	line-height: 1.25;
+}
+
+.collection .book h4 {
+	font-family: Bely, sans-serif;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-weight: 400;
+	line-height: 1.25;
 }
 
 .title {
