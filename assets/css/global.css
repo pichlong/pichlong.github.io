@@ -73,14 +73,6 @@ button,
 	background-image: none;
 }
 
-:-moz-focusring {
-	outline: auto;
-}
-
-:-moz-ui-invalid {
-	box-shadow: none;
-}
-
 blockquote,
 dl,
 dd,
@@ -377,13 +369,6 @@ footer .column.menu > div {
 	gap: 0.25rem;
 }
 
-footer .\!column.menu > div {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	gap: 0.25rem;
-}
-
 footer .column.menu .social {
 	font-weight: 600;
 }
@@ -457,14 +442,6 @@ footer .column.contact {
 	footer .column.contact {
 		align-items: flex-start;
 	}
-}
-
-footer .\!column.contact {
-	display: flex;
-	max-width: 200px;
-	flex-direction: column;
-	align-items: center;
-	gap: 0.25rem;
 }
 
 *,
@@ -1928,6 +1905,185 @@ footer .\!column.contact {
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
 	text-align: left;
+}
+
+.product-table .user-data .payment .payments-logo {
+	display: flex;
+	justify-content: center;
+	-moz-column-gap: 1.5rem;
+	column-gap: 1.5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+	.product-table .user-data .payment .payments-logo {
+		justify-content: flex-start;
+	}
+}
+
+.product-table .user-data .payment .payments-logo img {
+	height: 3.5rem;
+	width: auto;
+}
+
+.product-table .inputs .field .two-fields {
+	display: flex;
+	-moz-column-gap: 0.75rem;
+	column-gap: 0.75rem;
+}
+
+.product-table .inputs .\!field .two-fields {
+	display: flex;
+	-moz-column-gap: 0.75rem;
+	column-gap: 0.75rem;
+}
+
+.confirmation {
+	display: flex;
+	width: 100%;
+	max-width: 64rem;
+	flex-direction: column;
+	row-gap: 1.5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+	.confirmation {
+		flex-direction: row;
+	}
+}
+
+.confirmation > * {
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.confirmation > * {
+		width: 50%;
+	}
+}
+
+.confirmation h1,
+.confirmation h2 {
+	margin-bottom: 1rem;
+	border-bottom-width: 2px;
+	--border-opacity: 1;
+	border-color: rgb(0 0 0 / var(--border-opacity));
+	padding-bottom: 0.5rem;
+	font-family: Bely Display, sans-serif;
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+.confirmation .details {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.75rem;
+}
+
+.confirmation .details .data {
+	display: grid;
+	grid-template-columns: repeat(1, minmax(0, 1fr));
+	-moz-column-gap: 0.75rem;
+	column-gap: 0.75rem;
+	row-gap: 1rem;
+}
+
+@media (min-width: 768px) {
+	.confirmation .details .data {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+.confirmation .details .\!data {
+	display: grid;
+	grid-template-columns: repeat(1, minmax(0, 1fr));
+	-moz-column-gap: 0.75rem;
+	column-gap: 0.75rem;
+	row-gap: 1rem;
+}
+
+@media (min-width: 768px) {
+	.confirmation .details .\!data {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+.confirmation .details .label {
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+	font-weight: 600;
+}
+
+.confirmation .summary {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.75rem;
+}
+
+.confirmation .summary .details {
+	display: flex;
+	gap: 0.75rem;
+}
+
+@media (min-width: 768px) {
+	.confirmation .summary .details {
+		flex-direction: row;
+	}
+}
+
+.confirmation .summary .details img {
+	height: auto;
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.confirmation .summary .details img {
+		width: 33.333333%;
+	}
+}
+
+.confirmation .summary .details .meta {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	row-gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+	.confirmation .summary .details .meta {
+		width: 66.666667%;
+	}
+}
+
+.confirmation .summary .total {
+	display: flex;
+	justify-content: space-between;
+	-moz-column-gap: 1rem;
+	column-gap: 1rem;
+	border-top-width: 2px;
+	border-bottom-width: 2px;
+	--border-opacity: 1;
+	border-color: rgb(0 0 0 / var(--border-opacity));
+	padding: 0.5rem;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+}
+
+.confirmation .summary a {
+	margin-left: auto;
+	margin-right: auto;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+}
+
+.confirmation .summary .total .label {
+	font-family: Bely Display, sans-serif;
 }
 
 .title {
