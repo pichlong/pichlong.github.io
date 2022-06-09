@@ -10,6 +10,8 @@
 
 		<link href="./assets/css/global.css" rel="stylesheet" />
 		<script src="./assets/js/cart.js"></script>
+
+		<script src="./assets/js/checkout1.js"></script>
 	</head>
 	<body>
 		<header>
@@ -61,56 +63,91 @@
 						<h2>Shipping Address</h2>
 						<div class="inputs">
 							<div class="field">
-								<label for="first-name"> First Name </label>
+								<label for="s-first-name"> First Name </label>
 
-								<input type="text" id="first-name" value="Panhapich" />
+								<input
+									type="text"
+									name="s-first-name"
+									id="s-first-name"
+									value="Panhapich"
+								/>
 							</div>
 
 							<div class="field">
-								<label for="last-name"> Last Name </label>
+								<label for="s-last-name"> Last Name </label>
 
-								<input type="text" id="last-name" value="Long" />
+								<input
+									type="text"
+									name="s-last-name"
+									id="s-last-name"
+									value="Long"
+								/>
 							</div>
 
 							<div class="field">
-								<label for="address"> Address </label>
+								<label for="s-address"> Address </label>
 
-								<input type="text" id="address" value="23 Bray Street" />
+								<input
+									type="text"
+									name="s-address"
+									id="s-address"
+									value="23 Bray Street"
+								/>
 							</div>
 							<div class="field">
-								<label for="Second Address"> Second Address </label>
+								<label for="s-addess-2"> Second Address </label>
 
-								<input type="text" id="Second Address" />
-							</div>
-
-							<div class="field">
-								<label for="city"> City </label>
-
-								<input type="text" id="city" value="Melbourne" />
-							</div>
-
-							<div class="field">
-								<label for="country"> Country </label>
-
-								<input type="text" id="country" value="Australia" />
+								<input type="text" name="s-addess-2" id="s-addess-2" />
 							</div>
 
 							<div class="field">
-								<label for="State"> State </label>
+								<label for="s-city"> City </label>
 
-								<input type="text" id="State" value="VIC" />
+								<input
+									type="text"
+									name="s-city"
+									id="s-city"
+									value="Melbourne"
+								/>
 							</div>
 
 							<div class="field">
-								<label for="postal-code"> Postal Code </label>
+								<label for="s-country"> Country </label>
 
-								<input type="text" id="postal-code" value="3141" />
+								<input
+									type="text"
+									name="s-country"
+									id="s-country"
+									value="Australia"
+								/>
 							</div>
 
 							<div class="field">
-								<label for="phone-number"> Phone Number </label>
+								<label for="s-state"> State </label>
 
-								<input type="text" id="phone-number" value="0436921021" />
+								<input type="text" name="s-state" id="s-state" value="VIC" />
+							</div>
+
+							<div class="field">
+								<label for="s-postal-code"> Postal Code </label>
+
+								<input
+									type="text"
+									name="s-postal-code"
+									id="s-postal-code"
+									value="3141"
+								/>
+							</div>
+
+							<div class="field">
+								<label for="s-phone"> Phone Number </label>
+
+								<input
+									type="text"
+									name="s-phone"
+									id="s-phone"
+									value="0436921021"
+								/>
 							</div>
 						</div>
 					</div>
@@ -119,60 +156,90 @@
 						<div class="field">
 							<label for="same-address"> Same as Shipping Address </label>
 
-							<input checked type="checkbox" id="same-address" />
+							<input name="same-address" type="checkbox" id="same-address" />
 						</div>
-						<div class="inputs">
+						<div class="inputs" id="billing-inputs">
 							<div class="field">
-								<label for="first-name"> First Name </label>
+								<label for="b-first-name"> First Name </label>
 
-								<input type="text" id="first-name" value="Panhapich" />
+								<input
+									type="text"
+									name="b-first-name"
+									id="b-first-name"
+									value="Panhapich"
+								/>
 							</div>
 
 							<div class="field">
-								<label for="last-name"> Last Name </label>
+								<label for="b-last-name"> Last Name </label>
 
-								<input type="text" id="last-name" value="Long" />
+								<input
+									type="text"
+									name="b-last-name"
+									id="b-last-name"
+									value="Long"
+								/>
 							</div>
 
 							<div class="field">
-								<label for="address"> Address </label>
+								<label for="b-address"> Address </label>
 
-								<input type="text" id="address" value="23 Bray Street" />
+								<input
+									type="text"
+									name="b-address"
+									id="b-address"
+									value="23 Bray Street"
+								/>
 							</div>
 							<div class="field">
-								<label for="Second Address"> Second Address </label>
+								<label for="b-address-2"> Second Address </label>
 
-								<input type="text" id="Second Address" />
-							</div>
-
-							<div class="field">
-								<label for="city"> City </label>
-
-								<input type="text" id="city" value="Melbourne" />
-							</div>
-
-							<div class="field">
-								<label for="country"> Country </label>
-
-								<input type="text" id="country" value="Australia" />
+								<input type="text" name="b-address-2" id="b-address-2" />
 							</div>
 
 							<div class="field">
-								<label for="State"> State </label>
+								<label for="b-city"> City </label>
 
-								<input type="text" id="State" value="VIC" />
+								<input type="text" name="city" id="b-city" value="Melbourne" />
 							</div>
 
 							<div class="field">
-								<label for="postal-code"> Postal Code </label>
+								<label for="b-country"> Country </label>
 
-								<input type="text" id="postal-code" value="3141" />
+								<input
+									type="text"
+									name="b-country"
+									id="b-country"
+									value="Australia"
+								/>
 							</div>
 
 							<div class="field">
-								<label for="phone-number"> Phone Number </label>
+								<label for="b-state"> State </label>
 
-								<input type="text" id="phone-number" value="0436921021" />
+								<input type="text" name="b-state" id="b-state" value="VIC" />
+							</div>
+
+							<div class="field">
+								<label for="b-postal-code"> Postal Code </label>
+
+								<input
+									type="text"
+									name="b-postal-code"
+									id="b-postal-code"
+									value="3141"
+								/>
+							</div>
+
+							<div class="field">
+								<label for="b-phone"> Phone Number </label>
+
+								<input
+									type="text"
+									name="b-phone"
+									id="b-phone"
+									value="0436921021"
+								/>
 							</div>
 						</div>
 					</div>
@@ -214,7 +281,7 @@
 					<p>Order total: $40</p>
 				</div>
 				<div class="buttons">
-					<a class="btn-secondary" href="checkout2.html">Next</a>
+					<button class="btn-secondary" id="checkout-1">Next</button>
 				</div>
 			</section>
 		</main>
@@ -258,6 +325,10 @@
 			</div>
 		</footer>
 	</body>
+	<div id="toast" style="display: none" class="toast">
+		<p>Missing Details</p>
+		<img id="close-toast" src="./assets/img/times.svg" alt="" class="icon" />
+	</div>
 	<div id="cart-window" style="display: none" class="cart-window">
 		<div class="heading">
 			<p>Cart</p>

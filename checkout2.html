@@ -10,6 +10,8 @@
 
 		<link href="./assets/css/global.css" rel="stylesheet" />
 		<script src="./assets/js/cart.js"></script>
+
+		<script src="./assets/js/checkout2.js"></script>
 	</head>
 	<body>
 		<header>
@@ -133,7 +135,7 @@
 					<p>Order total: $40</p>
 				</div>
 				<div class="buttons">
-					<a class="btn-secondary" href="confirmation.html">Pay Now</a>
+					<button class="btn-secondary" id="checkout-2">Pay Now</button>
 				</div>
 			</section>
 		</main>
@@ -177,6 +179,10 @@
 			</div>
 		</footer>
 	</body>
+	<div id="toast" style="display: none" class="toast">
+		<p>Missing Details</p>
+		<img id="close-toast" src="./assets/img/times.svg" alt="" class="icon" />
+	</div>
 	<div id="cart-window" style="display: none" class="cart-window">
 		<div class="heading">
 			<p>Cart</p>
