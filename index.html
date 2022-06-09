@@ -7,8 +7,9 @@
 		<title>Our Bookshop Hawksburn</title>
 
 		<link rel="stylesheet" href="https://use.typekit.net/ooz0ybw.css" />
-
 		<link href="./assets/css/global.css" rel="stylesheet" />
+    <script src="./assets/js/cart.js"></script>
+    <script src="./assets/js/cart.js"></script>
 	</head>
 	<body>
 		<header>
@@ -40,7 +41,7 @@
 						<img class="icon" src="./assets/img/user.svg" alt="user" />
 					</a>
 					<button id="cart-open-icon">
-						<img class="icon" src="./assets/img/cart.svg" alt="cart" />
+						<img class="icon" src="./assets/img/cart.svg" alt="cart"  />
 					</button>
 				</div>
 				<div class="">
@@ -71,12 +72,12 @@
 							<p>Availability: Yes</p>
 							<p>Price: $40</p>
 						</div>
-						<button class="btn-primary">Buy now</button>
+						<a href="single.html" class="btn-primary">Buy now</a>
 					</div>
 				</div>
 			</section>
 			<section class="subhero">
-				<div class="featured">
+				<a href="single.html" class="featured">
 					<img src="./assets/photos/00-home/book2.jpg" alt="" />
 					<div class="meta">
 						<h3 class="title">Harry Potter</h3>
@@ -87,8 +88,8 @@
 							research focus on interaction design for emerging technologies.
 						</p>
 					</div>
-				</div>
-				<div class="featured">
+				</a>
+				<a href="single.html" class="featured">
 					<img src="./assets/photos/00-home/book3.jpg" alt="" />
 					<div class="meta">
 						<h3 class="title">Game of Thrones</h3>
@@ -103,7 +104,7 @@
 			</section>
 			<section class="collection">
 				<h2 class="">Collection Title</h2>
-				<div class="group">
+				<a href="single.html" class="group">
 					<div class="book">
 						<img src="./assets/photos/01-collection-title/book1.jpg" alt="" />
 						<div>
@@ -202,45 +203,41 @@
 				<p>adobexd@mail.com</p>
 			</div>
 		</footer>
+
+    <div id="cart-window" style="display: none;"  class="cart-window">
+      <div class="heading">
+        <p >Cart</p>
+        <img id="cart-close-icon" src="./assets/img/times.svg" alt="" class="icon" />
+      </div>
+      <table>
+					<thead>
+						<tr>
+							<th>Item</th>
+							<th>Unit Price</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<img src="./assets/photos/05-cart/book1.jpg" alt="" />
+							</td>
+							<td>
+								<p>$40</p>
+							</td>
+							<td>
+								<img src="./assets/img/times.svg" alt="" class="icon" />
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="subtotal">
+					<p>Subtotal: $40</p>
+				</div>
+				<div class="buttons">
+					<a class="btn-primary" href="checkout1.html">Checkout</a>
+					<a class="btn-primary" href="shop.html">Continue Shopping</a>
+				</div>
+    </div>
 	</body>
-	<div id="cart-window" style="display: none" class="cart-window">
-		<div class="heading">
-			<p>Cart</p>
-			<img
-				id="cart-close-icon"
-				src="./assets/img/times.svg"
-				alt=""
-				class="icon"
-			/>
-		</div>
-		<table>
-			<thead>
-				<tr>
-					<th>Item</th>
-					<th>Unit Price</th>
-					<th></th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>
-						<img src="./assets/photos/05-cart/book1.jpg" alt="" />
-					</td>
-					<td>
-						<p>$40</p>
-					</td>
-					<td>
-						<img src="./assets/img/times.svg" alt="" class="icon" />
-					</td>
-				</tr>
-			</tbody>
-		</table>
-		<div class="subtotal">
-			<p>Subtotal: $40</p>
-		</div>
-		<div class="buttons">
-			<a class="btn-primary" href="checkout1.html">Checkout</a>
-			<a class="btn-primary" href="shop.html">Continue Shopping</a>
-		</div>
-	</div>
 </html>

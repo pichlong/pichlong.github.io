@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="https://use.typekit.net/ooz0ybw.css" />
 
 		<link href="./assets/css/global.css" rel="stylesheet" />
+    <script src="./assets/js/cart.js"></script>
 	</head>
 	<body>
 		<header>
@@ -40,7 +41,7 @@
 						<img class="icon" src="./assets/img/user.svg" alt="user" />
 					</a>
 					<button id="cart-open-icon">
-						<img class="icon" src="./assets/img/cart.svg" alt="cart" />
+						<img class="icon" src="./assets/img/cart.svg" alt="cart"  />
 					</button>
 				</div>
 				<div class="">
@@ -111,7 +112,7 @@
 						</div>
 					</div>
 					<div class="group">
-						<div class="book">
+						<a href="single.html" class="book">
 							<img src="./assets/photos/02-shop/book1.jpg" alt="" />
 							<div class="meta">
 								<h3>Book name</h3>
@@ -123,8 +124,8 @@
 								<button class="btn-secondary">Add to cart</button>
 								<button class="btn-primary">Buy now</button>
 							</div>
-						</div>
-						<div class="book">
+						</a>
+						<a href="single.html"  class="book">
 							<img src="./assets/photos/02-shop/book2.jpg" alt="" />
 							<div class="meta">
 								<h3>Book name</h3>
@@ -136,8 +137,8 @@
 								<button class="btn-secondary">Add to cart</button>
 								<button class="btn-primary">Buy now</button>
 							</div>
-						</div>
-						<div class="book">
+						</a>
+						<a href="single.html"  class="book">
 							<img src="./assets/photos/02-shop/book3.jpg" alt="" />
 							<div class="meta">
 								<h3>Book name</h3>
@@ -149,8 +150,8 @@
 								<button class="btn-secondary">Add to cart</button>
 								<button class="btn-primary">Buy now</button>
 							</div>
-						</div>
-						<div class="book">
+						</a>
+						<a href="single.html"  class="book">
 							<img src="./assets/photos/02-shop/book4.jpg" alt="" />
 							<div class="meta">
 								<h3>Book name</h3>
@@ -162,8 +163,8 @@
 								<button class="btn-secondary">Add to cart</button>
 								<button class="btn-primary">Buy now</button>
 							</div>
-						</div>
-						<div class="book">
+						</a>
+						<a  href="single.html" class="book">
 							<img src="./assets/photos/02-shop/book5.jpg" alt="" />
 							<div class="meta">
 								<h3>Book name</h3>
@@ -175,8 +176,8 @@
 								<button class="btn-secondary">Add to cart</button>
 								<button class="btn-primary">Buy now</button>
 							</div>
-						</div>
-						<div class="book">
+						</a>
+						<a  href="single.html"  class="book">
 							<img src="./assets/photos/02-shop/book6.jpg" alt="" />
 							<div class="meta">
 								<h3>Book name</h3>
@@ -293,45 +294,39 @@
 				<p>adobexd@mail.com</p>
 			</div>
 		</footer>
-	</body>
-	<div id="cart-window" style="display: none" class="cart-window">
-		<div class="heading">
-			<p>Cart</p>
-			<img
-				id="cart-close-icon"
-				src="./assets/img/times.svg"
-				alt=""
-				class="icon"
-			/>
-		</div>
-		<table>
-			<thead>
-				<tr>
-					<th>Item</th>
-					<th>Unit Price</th>
-					<th></th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>
-						<img src="./assets/photos/05-cart/book1.jpg" alt="" />
-					</td>
-					<td>
-						<p>$40</p>
-					</td>
-					<td>
-						<img src="./assets/img/times.svg" alt="" class="icon" />
-					</td>
-				</tr>
-			</tbody>
-		</table>
-		<div class="subtotal">
-			<p>Subtotal: $40</p>
-		</div>
-		<div class="buttons">
-			<a class="btn-primary" href="checkout1.html">Checkout</a>
-			<a class="btn-primary" href="shop.html">Continue Shopping</a>
-		</div>
-	</div>
+	</body><div id="cart-window" style="display: none;"  class="cart-window">
+      <div class="heading">
+        <p >Cart</p>
+        <img id="cart-close-icon" src="./assets/img/times.svg" alt="" class="icon" />
+      </div>
+      <table>
+					<thead>
+						<tr>
+							<th>Item</th>
+							<th>Unit Price</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<img src="./assets/photos/05-cart/book1.jpg" alt="" />
+							</td>
+							<td>
+								<p>$40</p>
+							</td>
+							<td>
+								<img src="./assets/img/times.svg" alt="" class="icon" />
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="subtotal">
+					<p>Subtotal: $40</p>
+				</div>
+				<div class="buttons">
+					<a class="btn-primary" href="checkout1.html">Checkout</a>
+					<a class="btn-primary" href="shop.html">Continue Shopping</a>
+				</div>
+    </div>
 </html>
